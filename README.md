@@ -71,7 +71,7 @@
   curl_setopt($curlHandle, CURLOPT_COOKIE, "sid=".$resultObject->id."; ");
   $output = curl_exec($curlHandle);
   $status = curl_getinfo($curlHandle, CURLINFO_HTTP_CODE);
-  echo("<h4>".$status."</h4>");
+  echo $status;
   curl_close($curlHandle);
 
   // STEP 4: Posting a Record
