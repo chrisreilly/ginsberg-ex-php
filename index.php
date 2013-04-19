@@ -3,7 +3,7 @@
   // STEP 1: Authentication
 
   // create a curl handle with the login url
-  $curlHandle = curl_init("http://api.project-ginsberg.com:2404/users/login");
+  $curlHandle = curl_init("https://api.project-ginsberg.com/users/login");
 
   // construct an associative array with the username and password
   // you can see that this contains Mr. Ginsberg's username and password
